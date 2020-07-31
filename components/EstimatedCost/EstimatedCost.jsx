@@ -8,7 +8,7 @@ const EstimatedCost = () => {
       <p className={styles.price}>$19.350</p>
       <div className={styles.horizontalLine}></div>
       <input type="text" className={styles.emailInput} placeholder="E-mail" />
-      <button></button>
+      <button className={styles.submitBtn}>Submit</button>
     </div>
   );
 }

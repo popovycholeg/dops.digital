@@ -35,3 +35,12 @@
   background-color: #1b1b1b;
   width: 90%;
 }
+
+.submitBtn {
+  background: #674BB1;
+  color: #ffffff;
+  border-radius: 4px;
+  width: 90%;
+  height: 15%;
+  margin-top: 5%;
+}

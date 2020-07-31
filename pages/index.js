@@ -3,6 +3,7 @@ import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
 import InfoSection from '../components/InfoSection/InfoSection';
 import EstimatedCost from '../components/EstimatedCost/EstimatedCost';
+import MediumSection from '../components/MediumSection/MediumSection'
 
 export default function Home() {
   return (
@@ -16,6 +17,10 @@ export default function Home() {
       <main>
       <InfoSection />
       <EstimatedCost />
+      <div className="scroll-section">
+        <MediumSection />
+      </div>
+      
       </main>
       <Footer />
     
@@ -33,6 +38,10 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+        }
+
+        .scroll-section {
+          align-self: flex-end;
         }
       `}</style>
     </div>
