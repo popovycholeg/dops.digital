@@ -9,9 +9,9 @@ const MediumSection = () => {
   return (
     <section className={styles.container}>
       <Dot number={2} />
-      <p className={`medium-text ${styles.marginTop}`}>Choose the medium</p>
+      <p className={`medium-text ${styles.marginTop}`}>Choose the style</p>
       <p className={`small-text ${styles.textContainer1} ${styles.marginTop}`}>
-        Find out the difference in our examples by hovering the cursor.
+        How does the price change? Some styles take more time to produce = higher price.
       </p>
 
       <div className={styles.buttonsContainer}>

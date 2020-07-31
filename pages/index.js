@@ -4,6 +4,7 @@ import Header from '../components/Header/Header';
 import InfoSection from '../components/InfoSection/InfoSection';
 import EstimatedCost from '../components/EstimatedCost/EstimatedCost';
 import MediumSection from '../components/MediumSection/MediumSection';
+import StyleSection from '../components/StyleSection/StyleSection';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <EstimatedCost />
       <div className="scroll-section">
         <MediumSection />
+        <StyleSection />
       </div>
       
       </main>
