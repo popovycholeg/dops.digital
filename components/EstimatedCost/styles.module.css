@@ -3,12 +3,13 @@
   border-radius: 4px;
   width: 30vw;
   height: 20vw;
-  position:fixed;
-  top: 50vh;
-  left: 2.5vw;
+  position: sticky;
+  top: 10px;
+  left: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
 }
 
 .text1 {
