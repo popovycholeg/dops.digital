@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 95vw;
+  margin-top: 5vh;
+  margin-left: 1%;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.logo {
+  font-size: 20px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  align-self: center;
+  margin: 0;
+}
+
+.toTop {
+  font-size: 14px;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.horizontalLine {
+  background-color: #494949;
+  height: 1px;
+  width: 100%;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+.marginBottom {
+  margin-bottom: 2%;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+
+.link{
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.marginLeft{
+  margin-left: 10px;
+}
+
+.alignCenter{
+  margin-left: 20vw;
+}
+
+.dopsDigital {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: 0;
+  color: #ffffff;
+}
