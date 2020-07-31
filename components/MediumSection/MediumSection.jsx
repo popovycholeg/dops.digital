@@ -1,11 +1,12 @@
 import React, {useState} from "react";
+import { connect } from "react-redux";
 
 import styles from "./styles.module.css";
 import Dot from "../Dot/Dot";
 import RadioButton from "../RadioButton/RadioButton";
 import buttonsData from "./buttonsData.json";
 
-const MediumSection = () => {
+const MediumSection = (props) => {
   const [activeId, setActiveId] = useState(-1);
   const handleClick = (index) => {
     setActiveId(index);
@@ -30,8 +31,12 @@ const MediumSection = () => {
           />
         ))}
       </div>
+        <p>{props.mediumReducer}</p>
     </section>
   );
 };
 
+// const mapDispatchToProps = { setMediumButtons };
+// const mapStateToProps = (state) => ({ mediumReducer: state.mediumReducer });
+// export default connect(mapStateToProps, mapDispatchToProps)(MediumSection);
 export default MediumSection;

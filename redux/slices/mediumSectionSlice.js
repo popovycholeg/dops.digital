@@ -4,18 +4,18 @@ const mediumSectionSlice = createSlice({
   name: "mediumSection",
   initialState: null,
   reducers: {
-    setButtons(state, action) {
+    setMediumButtons(state, action) {
       return action.payload;
     },
-    setActiveButton(state, action) {
+    setActiveMediumButton(state, action) {
       return {
         ...state,
-        activeId: action.payload
+        activeId: action.payload,
       };
     },
   },
 });
 
 const { actions, reducer } = mediumSectionSlice;
-export const { setButtons, setActiveButton } = actions;
+export const { setMediumButtons, setActiveMediumButton } = actions;
 export default reducer;

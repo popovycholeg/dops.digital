@@ -1,13 +1,25 @@
-import Head from "next/head";
+import Head, {useEffect, useState} from "next/head";
+import { connect } from "react-redux";
+
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import InfoSection from "../components/InfoSection/InfoSection";
 import EstimatedCost from "../components/EstimatedCost/EstimatedCost";
 import MediumSection from "../components/MediumSection/MediumSection";
+// import mediumButtons from "../components/MediumSection/buttonsData.json";
 import StyleSection from "../components/StyleSection/StyleSection";
 import DurationSection from "../components/DurationSection/DurationSection";
+import TimeFrameSection from "../components/TimeFrameSection/TimeFrameSection";
+import ProductionQualitySection from "../components/ProductionQualitySection/ProductionQualitySection";
+import AdditionalOptionsSection from "../components/AdditionalOptionsSection/AdditionalOptionsSection";
 
-export default function Home() {
+
+const Home = (props) => {
+  // const [mediumState, setstate] = useState(0);
+  // useEffect(() => {
+  //   props.setMediumButtons(mediumButtons);
+  // }, []);
+
   return (
     <div className='container'>
       <Head>
@@ -24,6 +36,9 @@ export default function Home() {
             <MediumSection />
             <StyleSection />
             <DurationSection />
+            <TimeFrameSection />
+            <ProductionQualitySection />
+            <AdditionalOptionsSection />
           </div>
         </div>
       </main>
@@ -58,4 +73,9 @@ export default function Home() {
       `}</style>
     </div>
   );
-}
+};
+
+// const mapDispatchToProps = { setMediumButtons };
+// const mapStateToProps = (state) => ({ mediumReducer: state.mediumReducer });
+// export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default Home;

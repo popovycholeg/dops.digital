@@ -1,5 +1,5 @@
-import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
-import mediumReducer from './slices/mediumSectionSlice';
+import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
+import mediumReducer from "./slices/mediumSectionSlice";
 
 const middleware = getDefaultMiddleware({
   immutableCheck: false,
@@ -7,7 +7,9 @@ const middleware = getDefaultMiddleware({
 });
 
 export const store = configureStore({
- reducer: { mediumReducer: mediumReducer},
- middleware,
- devTools: false,
+  reducer: {
+    mediumReducer: mediumReducer,
+  },
+  middleware,
+  devTools: false,
 });
