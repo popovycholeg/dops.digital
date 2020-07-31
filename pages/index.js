@@ -12,7 +12,7 @@ import DurationSection from "../components/DurationSection/DurationSection";
 import TimeFrameSection from "../components/TimeFrameSection/TimeFrameSection";
 import ProductionQualitySection from "../components/ProductionQualitySection/ProductionQualitySection";
 import AdditionalOptionsSection from "../components/AdditionalOptionsSection/AdditionalOptionsSection";
-
+import CommentSection from "../components/CommentSection/CommentSection";
 
 const Home = (props) => {
   // const [mediumState, setstate] = useState(0);
@@ -39,6 +39,7 @@ const Home = (props) => {
             <TimeFrameSection />
             <ProductionQualitySection />
             <AdditionalOptionsSection />
+            <CommentSection />
           </div>
         </div>
       </main>
