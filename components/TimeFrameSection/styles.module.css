@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  margin-top: 4vh;
+}
+
+.textContainer1 {
+  width: 20%;
+}
+
+.marginTop {
+  margin-top: 15px;
+}
+
+.marginLeft {
+  margin-left: 15px;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}

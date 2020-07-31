@@ -1,23 +1,30 @@
 [
   {
-    "title": "3D Animation"
+    "title": "3D Animation",
+    "price": 100
   },
   {
-    "title": "2D Animation"
+    "title": "2D Animation",
+    "price": 101
   },
   {
-    "title": "Editing / Motion Graphics"
+    "title": "Editing / Motion Graphics",
+    "price": 102
   },
   {
-    "title": "Live Action Production"
+    "title": "Live Action Production",
+    "price": 104
   },
   {
-    "title": "Foreign Language"
+    "title": "Foreign Language",
+    "price": 103
   },
   {
-    "title": "Characters"
+    "title": "Characters",
+    "price": 105
   },
   {
-    "title": "Style hybrid"
+    "title": "Style hybrid",
+    "price": 106
   }
 ]

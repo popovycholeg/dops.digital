@@ -4,7 +4,7 @@ import cn from "classnames";
 
 import styles from "./styles.module.css";
 
-const RadioButton = ({ number, text, isActive = false }) => {
+const RadioButton = ({ number, text, isActive = false, onClick }) => {
   const [isHover, setHover] = useState(false);
 
   return (
@@ -15,10 +15,10 @@ const RadioButton = ({ number, text, isActive = false }) => {
       })}
       onMouseOver={() => setHover(true)}
       onMouseOut={() => setHover(false)}
-      // onClick={()}
+      onClick={onClick}
     >
       <div className={styles.textContainer}>
-        <p className={`small-text ${styles.version}`}>{number}</p>
+        <p className={`small-text ${styles.version}`}>{(number + 1) + ".0"}</p>
         <p className={`medium-text`}>{text}</p>
       </div>
       {isActive ? (
@@ -36,6 +36,7 @@ const RadioButton = ({ number, text, isActive = false }) => {
 RadioButton.propTypes = {
   text: PropTypes.string,
   number: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  onClick: PropTypes.func
 };
 
 export default RadioButton;
