@@ -8,7 +8,7 @@ import buttonsData from "./buttonsData.json";
 const MediumSection = () => {
   return (
     <section className={styles.container}>
-      <Dot number={1} />
+      <Dot number={2} />
       <p className={`medium-text ${styles.marginTop}`}>Choose the medium</p>
       <p className={`small-text ${styles.textContainer1} ${styles.marginTop}`}>
         Find out the difference in our examples by hovering the cursor.

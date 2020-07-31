@@ -3,7 +3,7 @@ import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
 import InfoSection from '../components/InfoSection/InfoSection';
 import EstimatedCost from '../components/EstimatedCost/EstimatedCost';
-import MediumSection from '../components/MediumSection/MediumSection'
+import MediumSection from '../components/MediumSection/MediumSection';
 
 export default function Home() {
   return (
