@@ -1,16 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import PropTypes from "prop-types";
 import cn from "classnames";
 
 import styles from "./styles.module.css";
 
 const RadioButton = ({ number, text, isActive = false }) => {
+  const [isHover, setHover] = useState(false);
+
   return (
     <div
       className={cn({
         [styles.container]: true,
         [styles.active]: isActive,
       })}
+      onMouseOver={() => setHover(true)}
+      onMouseOut={() => setHover(false)}
+      // onClick={()}
     >
       <div className={styles.textContainer}>
         <p className={`small-text ${styles.version}`}>{number}</p>
@@ -23,6 +28,7 @@ const RadioButton = ({ number, text, isActive = false }) => {
       ) : (
         <div className={styles.circle}></div>
       )}
+      {/* <img src="/image.png" alt="Vercel Logo" className="logo" /> */}
     </div>
   );
 };

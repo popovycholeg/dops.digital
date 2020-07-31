@@ -1,11 +1,12 @@
 .container {
   display: flex;
   flex-direction: row;
-  width: 50%;
+  width: 45%;
   height: 62px;
   border: 1px solid #494949;
   border-radius: 4px;
   margin-top: 4vh;
+  margin-right: 15px;
 }
 
 .textContainer {
