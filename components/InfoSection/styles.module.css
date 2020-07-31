@@ -1,0 +1,30 @@
+.sectionContainer {
+  display: flex;
+  flex-direction: row;
+  width: 95vw;
+  height: 30vh;
+  margin-top: 5vh;
+  margin-left: 1%;
+}
+
+.bigText {
+  /* font: Regular 49px/42px NB International; */
+  width: 25vw;
+  margin: 0;
+}
+
+.smallText {
+  /* font: Regular 14px/21px NB International; */
+  width: 25vw;
+  /* margin: 0; */
+  margin-left: 10%;
+  margin-top: 3vh;
+}
+
+.textContainer1 {
+  width: 15vw;
+}
+
+.textContainer2 {
+  width: 20vw;
+}

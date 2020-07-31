@@ -1,0 +1,13 @@
+.dot {
+  background: #674bb1;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  color: #ffffff;
+  display: inline-block;
+  line-height: 60px;
+  margin-right: 5px;
+  text-align: center;
+  width: 60px;
+  font-size: 45px;
+}

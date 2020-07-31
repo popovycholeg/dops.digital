@@ -1,0 +1,16 @@
+.navBar {
+  display: flex;
+  flex-direction: row;
+  background: #6356b5 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+  width: 95%;
+  margin-top: 4vh;
+  height: 44px;
+}
+.logo {
+  font-size: 20px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  align-self: center;
+  margin-left: 5%;
+}
