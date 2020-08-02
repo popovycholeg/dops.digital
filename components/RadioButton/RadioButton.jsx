@@ -28,7 +28,7 @@ const RadioButton = ({ number, text, isActive = false, onClick }) => {
       ) : (
         <div className={styles.circle}></div>
       )}
-      {/* <img src="/image.png" alt="Vercel Logo" className="logo" /> */}
+      {isHover && <img src="/image.png" alt="Vercel Logo" className="logo" />}
     </div>
   );
 };

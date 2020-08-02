@@ -1,0 +1,32 @@
+.timelineWrap {
+  width: 80%;
+  position: relative;
+  height: 20%;
+  margin-top: 25px;
+  margin-left: 5%;
+}
+
+.timeline {
+  height: 1px;
+  width: 100%;
+  background-color: #7b7b7b;
+  position: relative;
+}
+
+.marker {
+  z-index: 1000;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  position: absolute;
+  margin-left: -25px;
+  border: 1px solid #7b7b7b;
+  background-color: #1b1b1b;
+  border-radius: 50%;
+  top: -12.5px;
+}
+
+.active {
+  background-color: #674BB1;
+  border: none;
+}
