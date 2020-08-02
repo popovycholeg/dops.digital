@@ -1,14 +1,17 @@
 import React, { useState } from "react";
+import { connect } from "react-redux";
 
 import styles from "./styles.module.css";
 import Dot from "../Dot/Dot";
 import RadioButton from "../RadioButton/RadioButton";
 import buttonsData from "./buttonsData.json";
+import { setAdditionalOptionsPrice } from "../../redux/slices/priceSlice";
 
-const AdditionalOptionsSection = () => {
+const AdditionalOptionsSection = ({setAdditionalOptionsPrice}) => {
   const [activeId, setActiveId] = useState(-1);
-  const handleClick = (index) => {
+  const handleClick = (index, price) => {
     setActiveId(index);
+    setAdditionalOptionsPrice(price);
   };
 
   return (
@@ -25,7 +28,7 @@ const AdditionalOptionsSection = () => {
             number={index}
             key={index}
             isActive={index === activeId}
-            onClick={() => handleClick(index)}
+            onClick={() => handleClick(index, button.price)}
           />
         ))}
       </div>
@@ -33,4 +36,5 @@ const AdditionalOptionsSection = () => {
   );
 };
 
-export default AdditionalOptionsSection;
+const mapDispatchToProps = { setAdditionalOptionsPrice };
+export default connect(null, mapDispatchToProps)(AdditionalOptionsSection);
