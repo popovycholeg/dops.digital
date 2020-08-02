@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className={styles.container}>
       <div className={styles.logoContainer}>
         <p className={styles.logo}>Logo</p>
-        <p className={styles.toTop}>to top</p>
+        <p className={styles.toTop} onClick={() => window.scrollTo(0, 0)}>to top ^</p>
       </div>
       <div className={styles.horizontalLine}></div>
       <div className={styles.linksContainer}>

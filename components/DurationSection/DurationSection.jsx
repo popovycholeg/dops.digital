@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./styles.module.css";
 import Dot from "../Dot/Dot";
-import RadioButton from "../RadioButton/RadioButton";
+import StepRange from "../StepRange/StepRange";
 
 const DurationSection = () => {
   return (
@@ -12,7 +12,7 @@ const DurationSection = () => {
       <p className={`small-text ${styles.textContainer1} ${styles.marginTop}`}>
         Find a time that suits your animation idea.
       </p>
-      
+      <StepRange />
     </section>
   );
 };
