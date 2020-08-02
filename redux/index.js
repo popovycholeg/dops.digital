@@ -1,15 +1,10 @@
 import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
-import mediumReducer from "./slices/mediumSectionSlice";
-
-const middleware = getDefaultMiddleware({
-  immutableCheck: false,
-  serializableCheck: false,
-});
+import priceReducer from "./slices/priceSlice";
 
 export const store = configureStore({
   reducer: {
-    mediumReducer: mediumReducer,
+    priceReducer: priceReducer,
   },
-  middleware,
-  devTools: false,
+  middleware: getDefaultMiddleware(),
+  devTools: true,
 });

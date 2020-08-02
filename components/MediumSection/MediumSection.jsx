@@ -1,16 +1,18 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 
 import styles from "./styles.module.css";
 import Dot from "../Dot/Dot";
 import RadioButton from "../RadioButton/RadioButton";
 import buttonsData from "./buttonsData.json";
+import { setMediumSectionPrice } from "../../redux/slices/priceSlice";
 
 const MediumSection = (props) => {
   const [activeId, setActiveId] = useState(-1);
-  const handleClick = (index) => {
+  const handleClick = (index, price) => {
     setActiveId(index);
-  }
+    props.setMediumSectionPrice(price);
+  };
 
   return (
     <section className={styles.container}>
@@ -27,16 +29,14 @@ const MediumSection = (props) => {
             number={index}
             key={index}
             isActive={index === activeId}
-            onClick={() => handleClick(index)}
+            onClick={() => handleClick(index, button.price)}
           />
         ))}
       </div>
-        <p>{props.mediumReducer}</p>
+      <p>{props.mediumReducer}</p>
     </section>
   );
 };
 
-// const mapDispatchToProps = { setMediumButtons };
-// const mapStateToProps = (state) => ({ mediumReducer: state.mediumReducer });
-// export default connect(mapStateToProps, mapDispatchToProps)(MediumSection);
-export default MediumSection;
+const mapDispatchToProps = { setMediumSectionPrice };
+export default connect(null, mapDispatchToProps)(MediumSection);

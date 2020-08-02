@@ -6,7 +6,6 @@ import Header from "../components/Header/Header";
 import InfoSection from "../components/InfoSection/InfoSection";
 import EstimatedCost from "../components/EstimatedCost/EstimatedCost";
 import MediumSection from "../components/MediumSection/MediumSection";
-// import mediumButtons from "../components/MediumSection/buttonsData.json";
 import StyleSection from "../components/StyleSection/StyleSection";
 import DurationSection from "../components/DurationSection/DurationSection";
 import TimeFrameSection from "../components/TimeFrameSection/TimeFrameSection";
@@ -15,10 +14,6 @@ import AdditionalOptionsSection from "../components/AdditionalOptionsSection/Add
 import CommentSection from "../components/CommentSection/CommentSection";
 
 const Home = (props) => {
-  // const [mediumState, setstate] = useState(0);
-  // useEffect(() => {
-  //   props.setMediumButtons(mediumButtons);
-  // }, []);
 
   return (
     <div className='container'>

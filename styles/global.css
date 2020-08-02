@@ -15,7 +15,7 @@ body {
 .small-text {
   text-align: left;
   letter-spacing: 0px;
-  color: #7B7B7B;
+  color: #7b7b7b;
   font-size: 14px;
   line-height: 21px;
   margin: 0;
@@ -39,3 +39,7 @@ body {
   margin: 0;
 }
 
+.logo {
+  position: absolute;
+  top: 0;
+}
