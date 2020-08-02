@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: row;
   width: 100%;
+  margin-bottom: 3vh;
 }
 
 .logo {
@@ -47,7 +48,7 @@
 }
 
 .marginBottom {
-  margin-bottom: 2%;
+  margin-bottom: 15px;
 }
 
 .links {
@@ -61,8 +62,8 @@
   margin-bottom: 5px;
 }
 
-.marginLeft{
-  margin-left: 10px;
+.marginRight{
+  margin-right: 10px;
 }
 
 .alignCenter{

@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={`${styles.horizontalLine} ${styles.marginBottom}`}></div>
-      <div className={styles.logoContainer}>
+      <div className={`${styles.logoContainer} ${styles.marginBottom}`}>
         <a
           href='#'
           className={`small-text ${styles.link} ${styles.marginLeft}`}
@@ -78,10 +78,10 @@ const Footer = () => {
           Copyright © 2019
         </a>
         <div className={styles.dopsDigital}>
-          <p className={`small-text ${styles.link}`}>created by  </p>
+          <p className={`small-text ${styles.link} ${styles.marginRight}`}>created by  </p>
           <a
             href='#'
-            className={`small-text ${styles.dopsDigital} ${styles.marginLeft}`}
+            className={`small-text ${styles.dopsDigital}`}
           >
             dops.digital
           </a>
