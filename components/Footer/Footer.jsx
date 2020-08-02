@@ -78,10 +78,10 @@ const Footer = () => {
           Copyright © 2019
         </a>
         <div className={styles.dopsDigital}>
-          <p className={`small-text ${styles.link}`}>created by  </p>
+          <p className={`small-text ${styles.link} ${styles.marginRight}`}>created by  </p>
           <a
             href='#'
-            className={`small-text ${styles.dopsDigital} ${styles.marginLeft}`}
+            className={`small-text ${styles.dopsDigital}`}
           >
             dops.digital
           </a>
