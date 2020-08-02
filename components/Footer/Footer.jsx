@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={`${styles.horizontalLine} ${styles.marginBottom}`}></div>
-      <div className={styles.logoContainer}>
+      <div className={`${styles.logoContainer} ${styles.marginBottom}`}>
         <a
           href='#'
           className={`small-text ${styles.link} ${styles.marginLeft}`}
