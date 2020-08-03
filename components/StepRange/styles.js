@@ -4,7 +4,10 @@ export const styles = (theme) => ({
     width: "45%",
     marginTop: "20px",
     marginBottom: "50px",
-    textAlign: "left"
+    textAlign: "left",
+    [theme.breakpoints.down('sm')]: {
+      width: "90%",
+    }
   },
   thumb: {
     height: "14px",

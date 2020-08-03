@@ -33,13 +33,13 @@ const EstimatedCost = ({ priceReducer }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("/api/send", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(inputs),
-    });
+    // const res = await fetch("/api/send", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(inputs),
+    // });
     // const text = await res.text();
     // handleResponse(res.status, text);
   };
@@ -51,8 +51,13 @@ const EstimatedCost = ({ priceReducer }) => {
       <div className={styles.horizontalLine}></div>
       <TimeLine />
       <form onSubmit={handleSubmit} className={styles.form}>
-        <input type='text' className={styles.emailInput} placeholder='E-mail' required />
-        <button className={styles.submitBtn} disabled={disabled} type="submit">
+        <input
+          type='email'
+          className={styles.emailInput}
+          placeholder='E-mail'
+          required
+        />
+        <button className={styles.submitBtn} disabled={disabled} type='submit'>
           Submit
         </button>
       </form>

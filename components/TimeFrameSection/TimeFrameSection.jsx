@@ -6,11 +6,11 @@ import Dot from "../Dot/Dot";
 import StepRange from "../StepRange/StepRange";
 import marks from "./marks.json";
 import SectionDescription from "../SectionDescription/SectionDescription";
-import { setTimeFrameSectionPrice } from "../../redux/slices/priceSlice";
+import { updatePrice } from "../../redux/slices/priceSlice";
 
-const TimeFrame = ({ setTimeFrameSectionPrice }) => {
+const TimeFrame = ({ updatePrice }) => {
   const handleChange = (event, newValue) => {
-    setTimeFrameSectionPrice(newValue);
+    updatePrice({ timeFrameSectionPrice: newValue });
   };
 
   return (
@@ -34,5 +34,5 @@ const TimeFrame = ({ setTimeFrameSectionPrice }) => {
   );
 };
 
-const mapDispatchToProps = { setTimeFrameSectionPrice };
+const mapDispatchToProps = { updatePrice };
 export default connect(null, mapDispatchToProps)(TimeFrame);

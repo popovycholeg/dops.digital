@@ -78,3 +78,20 @@
   margin-right: 0;
   color: #ffffff;
 }
+
+@media screen and (max-width: 600px) {
+  .CopyrightContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .alignCenter{
+    margin-left: 0;
+  }
+
+  .dopsDigital {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
