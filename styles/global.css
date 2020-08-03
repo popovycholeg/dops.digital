@@ -38,3 +38,7 @@ body {
   color: #ffffff;
   margin: 0;
 }
+
+textarea:focus, input:focus, button:focus{
+  outline: none;
+}

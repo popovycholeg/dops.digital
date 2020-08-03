@@ -1,11 +1,10 @@
 export const styles = (theme) => ({
   root: {
-    color: "red",
     height: 2,
     width: "45%",
     marginTop: "20px",
     marginBottom: "50px",
-    textAlign: "right"
+    textAlign: "left"
   },
   thumb: {
     height: "14px",
@@ -54,6 +53,6 @@ export const styles = (theme) => ({
   },
   markLabel: {
     marginTop: 10,
-    color: "#494949",
+    color: "#494949"
   },
 });

@@ -53,6 +53,9 @@
 }
 
 .image {
-  top: -50px;
-  left: -200px;
+  position: absolute;
+  border-radius: 10px;
+  transform: translate(-90%, -95%);
+  transition: all 0 0.5s;
+  max-width: 80%;
 }

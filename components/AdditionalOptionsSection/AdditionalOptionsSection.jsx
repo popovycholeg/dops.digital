@@ -22,13 +22,14 @@ const AdditionalOptionsSection = ({setAdditionalOptionsPrice}) => {
         Choose Additional Options
       </p>
       <div className={styles.buttonsContainer}>
-        {buttonsData.map((button, index) => (
+      {buttonsData.map(({ title, path, price }, index) => (
           <RadioButton
-            text={button.title}
+            text={title}
             number={index}
             key={index}
             isActive={index === activeId}
-            onClick={() => handleClick(index, button.price)}
+            imgPath={path}
+            onClick={() => handleClick(index, price)}
           />
         ))}
       </div>

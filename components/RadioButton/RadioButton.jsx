@@ -4,7 +4,7 @@ import cn from "classnames";
 
 import styles from "./styles.module.css";
 
-const RadioButton = ({ number, text, isActive = false, onClick }) => {
+const RadioButton = ({ number, text, isActive = false, imgPath = null, onClick }) => {
   const [isHover, setHover] = useState(false);
 
   return (
@@ -28,7 +28,7 @@ const RadioButton = ({ number, text, isActive = false, onClick }) => {
       ) : (
         <div className={styles.circle}></div>
       )}
-      {isHover && <img src="/image.png" alt="img" className={styles.image} />}
+      {(isHover && imgPath) && <img src="/image.png" alt="img" className={styles.image} />}
     </div>
   );
 };
