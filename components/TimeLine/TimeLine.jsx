@@ -20,6 +20,8 @@ const TimeLine = ({ priceReducer }) => {
     height: "3px",
     background: "#674BB1",
     width: scrolled,
+    position: "absolute",
+    transform: "translate(0, -1px)"
   };
 
   const scrollProgress = () => {
@@ -43,7 +45,7 @@ const TimeLine = ({ priceReducer }) => {
   return (
     <div className={styles.timelineWrap}>
       <div className={styles.timeline}>
-        <div className={styles.progressBar} style={progressBarStyle} />
+        <div style={progressBarStyle} />
       </div>
       <div
         className={cn({

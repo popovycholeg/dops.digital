@@ -11,7 +11,7 @@ const priceSlice = createSlice({
     additionalOptionsPrice: 0,
   },
   reducers: {
-    setMediumSectionPrice(state, action) {
+    setMediumSectionPrice(state, action) { // TDOD: refactore to one action
       return {
         ...state,
         mediumSectionPrice: action.payload,
