@@ -4,14 +4,18 @@ export const styles = (theme) => ({
     height: 2,
     width: "45%",
     marginTop: "20px",
+    marginBottom: "50px",
+    textAlign: "right"
   },
   thumb: {
-    height: 14,
-    width: 30,
-    backgroundColor: "#fff",
-    borderRadius: "20%",
-    marginTop: -7,
-    marginLeft: -15,
+    height: "14px",
+    width: "32px",
+    borderRadius: "10px",
+    background: "#ffffff",
+    cursor: "pointer",
+    transform: "translateY(6px)",
+    marginTop: -13,
+    marginLeft: -16,
     "&:focus, &:hover, &$active": {
       boxShadow:
         "0 3px 1px rgba(0,0,0,0.1),0 4px 8px rgba(0,0,0,0.3),0 0 0 1px rgba(0,0,0,0.02)",

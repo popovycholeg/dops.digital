@@ -1,0 +1,22 @@
+[
+  {
+    "value": 10,
+    "label": "Anytime"
+  },
+  {
+    "value": 20,
+    "label": "16 weeks"
+  },
+  {
+    "value": 30,
+    "label": "8 weeks"
+  },
+  {
+    "value": 40,
+    "label": "4 weeks"
+  },
+  {
+    "value": 50,
+    "label": "ASAP"
+  }
+]

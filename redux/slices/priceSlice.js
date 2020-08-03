@@ -5,6 +5,8 @@ const priceSlice = createSlice({
   initialState: {
     mediumSectionPrice: 0,
     styleSectionPrice: 0,
+    durationSectionPrice: 0,
+    timeFrameSectionPrice: 0,
     productionQualityPrice: 0,
     additionalOptionsPrice: 0,
   },
@@ -19,6 +21,18 @@ const priceSlice = createSlice({
       return {
         ...state,
         styleSectionPrice: action.payload,
+      };
+    },
+    setDurationSectionPrice(state, action) {
+      return {
+        ...state,
+        durationSectionPrice: action.payload,
+      };
+    },
+    setTimeFrameSectionPrice(state, action) {
+      return {
+        ...state,
+        timeFrameSectionPrice: action.payload,
       };
     },
     setProductionQualityPrice(state, action) {
@@ -41,6 +55,8 @@ export const {
   setMediumSectionPrice,
   setStyleSectionPrice,
   setProductionQualityPrice,
-  setAdditionalOptionsPrice
+  setAdditionalOptionsPrice,
+  setDurationSectionPrice,
+  setTimeFrameSectionPrice
 } = actions;
 export default reducer;

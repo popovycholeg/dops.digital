@@ -5,8 +5,8 @@ import styles from "./styles.module.css";
 import TimeLine from '../TimeLine/TimeLine';
 
 const EstimatedCost = ({ priceReducer }) => {
-  const {mediumSectionPrice, styleSectionPrice, productionQualityPrice, additionalOptionsPrice} = priceReducer;
-  const price = mediumSectionPrice + styleSectionPrice + productionQualityPrice + additionalOptionsPrice;
+  const {mediumSectionPrice, styleSectionPrice, productionQualityPrice, additionalOptionsPrice, durationSectionPrice, timeFrameSectionPrice} = priceReducer;
+  const price = mediumSectionPrice + styleSectionPrice + productionQualityPrice + additionalOptionsPrice + durationSectionPrice + timeFrameSectionPrice;
   return (
     <div className={styles.container}>
       <p className={`small-text ${styles.text1}`}>Estimated Cost</p>
