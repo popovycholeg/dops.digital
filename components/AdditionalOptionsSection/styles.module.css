@@ -1,16 +1,8 @@
 .container {
   display: flex;
   flex-direction: column;
-  width: 60vw;
+  width: 100%;
   margin-top: 4vh;
-}
-
-.textContainer1 {
-  width: 20%;
-}
-
-.marginTop {
-  margin-top: 15px;
 }
 
 .marginLeft {
@@ -23,4 +15,8 @@
   width: 100%;
   flex-wrap: wrap;
   align-items: flex-start;
+}
+
+@media screen and (max-width: 800px) {
+  
 }

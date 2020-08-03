@@ -1,26 +1,32 @@
 [
   {
     "title": "3D Visualisation",
-    "price": 102
+    "price": 102,
+    "path": "/image.png"
   },
   {
     "title": "3D Cartoon",
-    "price": 202
+    "price": 202,
+    "path": "/image.png"
   },
   {
     "title": "Realisti Charaster Animation",
-    "price": 302
+    "price": 302,
+    "path": "/image.png"
   },
   {
     "title": "3D Visualisation",
-    "price": 132
+    "price": 132,
+    "path": "/image.png"
   },
   {
     "title": "Robotic Character Integration",
-    "price": 202
+    "price": 202,
+    "path": "/image.png"
   },
   {
     "title": "Creature VFX",
-    "price": 112
+    "price": 112,
+    "path": "/image.png"
   }
 ]

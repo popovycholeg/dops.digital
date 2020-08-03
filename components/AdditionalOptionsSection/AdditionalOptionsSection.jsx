@@ -5,6 +5,7 @@ import styles from "./styles.module.css";
 import Dot from "../Dot/Dot";
 import RadioButton from "../RadioButton/RadioButton";
 import buttonsData from "./buttonsData.json";
+import SectionDescription from "../SectionDescription/SectionDescription";
 import { setAdditionalOptionsPrice } from "../../redux/slices/priceSlice";
 
 const AdditionalOptionsSection = ({setAdditionalOptionsPrice}) => {
@@ -17,18 +18,19 @@ const AdditionalOptionsSection = ({setAdditionalOptionsPrice}) => {
   return (
     <section className={styles.container}>
       <Dot number={6} />
-      <p className={`medium-text ${styles.marginTop}`}>Additional Options</p>
-      <p className={`small-text ${styles.textContainer1} ${styles.marginTop}`}>
-        Choose Additional Options
-      </p>
+      <SectionDescription
+        title='Additional Options'
+        description='Choose Additional Options'
+      />
       <div className={styles.buttonsContainer}>
-        {buttonsData.map((button, index) => (
+      {buttonsData.map(({ title, path, price }, index) => (
           <RadioButton
-            text={button.title}
+            text={title}
             number={index}
             key={index}
             isActive={index === activeId}
-            onClick={() => handleClick(index, button.price)}
+            imgPath={path}
+            onClick={() => handleClick(index, price)}
           />
         ))}
       </div>

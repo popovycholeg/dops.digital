@@ -1,18 +1,22 @@
 [
   {
     "title": "Music Track",
-    "price": 100
+    "price": 100,
+    "path": "/image.png"
   },
   {
     "title": "Sound Effects",
-    "price": 101
+    "price": 101,
+    "path": "/image.png"
   },
   {
     "title": "Voiceover",
-    "price": 102
+    "price": 102,
+    "path": "/image.png"
   },
   {
     "title": "Storyboard",
-    "price": 104
+    "price": 104,
+    "path": "/image.png"
   }
 ]

@@ -5,6 +5,7 @@ import styles from "./styles.module.css";
 import Dot from "../Dot/Dot";
 import StepRange from "../StepRange/StepRange";
 import marks from "./marks.json";
+import SectionDescription from "../SectionDescription/SectionDescription";
 import { setTimeFrameSectionPrice } from "../../redux/slices/priceSlice";
 
 const TimeFrame = ({ setTimeFrameSectionPrice }) => {
@@ -15,10 +16,10 @@ const TimeFrame = ({ setTimeFrameSectionPrice }) => {
   return (
     <section className={styles.container}>
       <Dot number={4} />
-      <p className={`medium-text ${styles.marginTop}`}>TimeFrame</p>
-      <p className={`small-text ${styles.textContainer1} ${styles.marginTop}`}>
-        Do you have a particular time frame in mind?
-      </p>
+      <SectionDescription
+        title='TimeFrame'
+        description='Do you have a particular time frame in mind?'
+      />
       <StepRange
         aria-label='slider'
         defaultValue={20}
