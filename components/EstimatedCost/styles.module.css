@@ -1,10 +1,10 @@
 .container {
   border: 1px solid #494949;
   border-radius: 4px;
-  width: 100%;
+  width: 33.33%;
   height: 50vh;
   position: sticky;
-  top: 0px;
+  top: 10px;
   left: 0px;
   display: flex;
   flex-direction: column;
@@ -60,6 +60,7 @@
 @media screen and (max-width: 800px) {
   .container {
     position: relative;
+    width: 95%;
     margin-bottom: 5%;
     margin-top: 5%;
   }
@@ -83,14 +84,22 @@
   }
 }
 
-@media screen and (min-height: 1400px) {
-  .container {
-    height: 30vh;
-  }
-}
-
 @media screen and (min-height: 1600px) {
   .submitBtn {
     height: 80px;
   }
 }
+
+@media  screen and  (max-height: 700px) {
+  @media  screen and  (max-width: 800px)  {
+    .container {
+      height: 80vh;
+    }
+  }
+}
+
+@media (min-height: 1500px), screen and (orientation: portrait) { 
+  .container {
+    height: 20vh;
+  }
+ }

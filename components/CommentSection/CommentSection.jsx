@@ -10,7 +10,7 @@ const CommentSection = () => {
   }
   return (
     <section className={styles.container}>
-      <p className={`small-text ${styles.textContainer1} ${styles.marginTop}`}>Leave comment</p>
+      <p className={`small-text ${styles.label} ${styles.marginTop}`}>Leave comment</p>
       <textarea className={styles.textArea} placeholder='Paste your text to count words...' onChange={handleChange}>
       </textarea>
       <div className={styles.wordsCounter}>{lettersCount}</div>

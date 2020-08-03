@@ -58,6 +58,7 @@ const Home = () => {
         .scroll-section {
           align-self: flex-end;
           margin-left: 3%;
+          width: 66.66%
         }
 
         .content {
