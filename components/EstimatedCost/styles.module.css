@@ -13,7 +13,7 @@
 }
 
 .label {
-  margin-top: 3%;
+  margin-top: 15px;
 }
 
 .price {
@@ -43,7 +43,7 @@
   color: #ffffff;
   border-radius: 4px;
   width: 90%;
-  height: 40%;
+  height: 40px;
   margin-top: 5%;
 }
 
@@ -90,15 +90,13 @@
   }
 }
 
-@media  screen and  (max-height: 700px) {
-  @media  screen and  (max-width: 800px)  {
-    .container {
-      height: 80vh;
-    }
+@media screen and (max-height: 600px) {
+  .container {
+    height: 60vh;
   }
 }
 
-@media (min-height: 1500px), screen and (orientation: portrait) { 
+ @media screen and (orientation: portrait) and (min-width: 800px) { 
   .container {
     height: 20vh;
   }
