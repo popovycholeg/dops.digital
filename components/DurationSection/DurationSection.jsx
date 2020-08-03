@@ -5,9 +5,10 @@ import styles from "./styles.module.css";
 import Dot from "../Dot/Dot";
 import StepRange from "../StepRange/StepRange";
 import marks from "./marks.json";
+import SectionDescription from "../SectionDescription/SectionDescription";
 import { setDurationSectionPrice } from "../../redux/slices/priceSlice";
 
-const DurationSection = ({setDurationSectionPrice}) => {
+const DurationSection = ({ setDurationSectionPrice }) => {
   const handleChange = (event, newValue) => {
     setDurationSectionPrice(newValue);
   };
@@ -15,10 +16,10 @@ const DurationSection = ({setDurationSectionPrice}) => {
   return (
     <section className={styles.container}>
       <Dot number={3} />
-      <p className={`medium-text ${styles.marginTop}`}>Duration</p>
-      <p className={`small-text ${styles.textContainer1} ${styles.marginTop}`}>
-        Find a time that suits your animation idea.
-      </p>
+      <SectionDescription
+        title='Duration'
+        description='Find a time that suits your animation idea.'
+      />
       <StepRange
         aria-label='slider'
         defaultValue={20}

@@ -5,6 +5,7 @@ import styles from "./styles.module.css";
 import Dot from "../Dot/Dot";
 import RadioButton from "../RadioButton/RadioButton";
 import buttonsData from "./buttonsData.json";
+import SectionDescription from "../SectionDescription/SectionDescription";
 import { setStyleSectionPrice } from "../../redux/slices/priceSlice";
 
 const StyleSection = (props) => {
@@ -17,11 +18,11 @@ const StyleSection = (props) => {
   return (
     <section className={styles.container}>
       <Dot number={2} />
-      <p className={`medium-text ${styles.marginTop}`}>Choose the style</p>
-      <p className={`small-text ${styles.textContainer1} ${styles.marginTop}`}>
-        How does the price change? Some styles take more time to produce =
-        higher price.
-      </p>
+      <SectionDescription
+        title='Choose the style'
+        description='How does the price change? Some styles take more time to produce =
+        higher price.'
+      />
 
       <div className={styles.buttonsContainer}>
         {buttonsData.map(({ title, path, price }, index) => (

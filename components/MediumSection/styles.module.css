@@ -1,15 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  width: 60vw;
-}
-
-.textContainer1 {
-  width: 20%;
-}
-
-.marginTop {
-  margin-top: 15px;
+  width: 100%;
 }
 
 .marginLeft {

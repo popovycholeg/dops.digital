@@ -5,6 +5,7 @@ import styles from "./styles.module.css";
 import Dot from "../Dot/Dot";
 import RadioButton from "../RadioButton/RadioButton";
 import buttonsData from "./buttonsData.json";
+import SectionDescription from "../SectionDescription/SectionDescription";
 import { setMediumSectionPrice } from "../../redux/slices/priceSlice";
 
 const MediumSection = (props) => {
@@ -17,10 +18,10 @@ const MediumSection = (props) => {
   return (
     <section className={styles.container}>
       <Dot number={1} />
-      <p className={`medium-text ${styles.marginTop}`}>Choose the medium</p>
-      <p className={`small-text ${styles.textContainer1} ${styles.marginTop}`}>
-        Find out the difference in our examples by hovering the cursor.
-      </p>
+      <SectionDescription
+        title='Choose the medium'
+        description='Find out the difference in our examples by hovering the cursor.'
+      />
 
       <div className={styles.buttonsContainer}>
         {buttonsData.map(({ title, path, price }, index) => (

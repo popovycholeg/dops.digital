@@ -59,3 +59,9 @@
   transition: all 0 0.5s;
   max-width: 80%;
 }
+
+@media screen and (max-width: 950px) {
+  .container {
+    width: 95%;
+  }
+}
