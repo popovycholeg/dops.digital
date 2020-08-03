@@ -13,8 +13,8 @@ const RadioButton = ({ number, text, isActive = false, imgPath = null, onClick }
         [styles.container]: true,
         [styles.active]: isActive,
       })}
-      onMouseOver={() => setHover(true)}
-      onMouseOut={() => setHover(false)}
+      // onMouseOver={() => setHover(true)}
+      // onMouseOut={() => setHover(false)}
       onClick={onClick}
     >
       <div className={styles.textContainer}>

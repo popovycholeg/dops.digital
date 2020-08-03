@@ -46,7 +46,7 @@ const EstimatedCost = ({ priceReducer }) => {
 
   return (
     <div className={styles.container}>
-      <p className={`small-text ${styles.text1}`}>Estimated Cost</p>
+      <p className={`small-text ${styles.label}`}>Estimated Cost</p>
       <p className={styles.price}>${price}</p>
       <div className={styles.horizontalLine}></div>
       <TimeLine />

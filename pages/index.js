@@ -1,5 +1,4 @@
-import Head, {useEffect, useState} from "next/head";
-import { connect } from "react-redux";
+import Head from "next/head";
 
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
@@ -13,20 +12,19 @@ import ProductionQualitySection from "../components/ProductionQualitySection/Pro
 import AdditionalOptionsSection from "../components/AdditionalOptionsSection/AdditionalOptionsSection";
 import CommentSection from "../components/CommentSection/CommentSection";
 
-const Home = (props) => {
-
+const Home = () => {
   return (
     <div className='container'>
       <Head>
-        <title>Create Next App</title>
+        <title>Estimate your animation</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Header />
 
       <main>
         <InfoSection />
-        <div className='row'>
-          <EstimatedCost />
+        <div className='content'>
+          <EstimatedCost className='estimate'/>
           <div className='scroll-section'>
             <MediumSection />
             <StyleSection />
@@ -54,24 +52,37 @@ const Home = (props) => {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          width: 95%
         }
 
         .scroll-section {
           align-self: flex-end;
-          margin-left: 35px;
+          margin-left: 3%;
         }
 
-        .row {
+        .content {
           display: flex;
           flex-direction: row;
           margin-left: 0;
+          margin-top: 5%;
+          width: 100%
+        }
+
+        @media screen and (max-width: 800px) {
+          .content {
+            display: flex;
+            flex-direction: column-reverse;
+            margin-left: 0;
+            margin-top: 5%;
+            width: 100%
+          }
+          .scroll-section {
+            width: 100%
+          }
         }
       `}</style>
     </div>
   );
 };
 
-// const mapDispatchToProps = { setMediumButtons };
-// const mapStateToProps = (state) => ({ mediumReducer: state.mediumReducer });
-// export default connect(mapStateToProps, mapDispatchToProps)(Home);
 export default Home;
