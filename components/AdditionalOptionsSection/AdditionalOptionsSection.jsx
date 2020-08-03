@@ -6,13 +6,13 @@ import Dot from "../Dot/Dot";
 import RadioButton from "../RadioButton/RadioButton";
 import buttonsData from "./buttonsData.json";
 import SectionDescription from "../SectionDescription/SectionDescription";
-import { setAdditionalOptionsPrice } from "../../redux/slices/priceSlice";
+import { updatePrice } from "../../redux/slices/priceSlice";
 
-const AdditionalOptionsSection = ({setAdditionalOptionsPrice}) => {
+const AdditionalOptionsSection = ({ updatePrice }) => {
   const [activeId, setActiveId] = useState(-1);
   const handleClick = (index, price) => {
     setActiveId(index);
-    setAdditionalOptionsPrice(price);
+    updatePrice({ additionalOptionsPrice: price });
   };
 
   return (
@@ -23,7 +23,7 @@ const AdditionalOptionsSection = ({setAdditionalOptionsPrice}) => {
         description='Choose Additional Options'
       />
       <div className={styles.buttonsContainer}>
-      {buttonsData.map(({ title, path, price }, index) => (
+        {buttonsData.map(({ title, path, price }, index) => (
           <RadioButton
             text={title}
             number={index}
@@ -38,5 +38,5 @@ const AdditionalOptionsSection = ({setAdditionalOptionsPrice}) => {
   );
 };
 
-const mapDispatchToProps = { setAdditionalOptionsPrice };
+const mapDispatchToProps = { updatePrice };
 export default connect(null, mapDispatchToProps)(AdditionalOptionsSection);

@@ -6,11 +6,11 @@ import Dot from "../Dot/Dot";
 import StepRange from "../StepRange/StepRange";
 import marks from "./marks.json";
 import SectionDescription from "../SectionDescription/SectionDescription";
-import { setDurationSectionPrice } from "../../redux/slices/priceSlice";
+import { updatePrice } from "../../redux/slices/priceSlice";
 
-const DurationSection = ({ setDurationSectionPrice }) => {
+const DurationSection = ({ updatePrice }) => {
   const handleChange = (event, newValue) => {
-    setDurationSectionPrice(newValue);
+    updatePrice({ durationSectionPrice: newValue });
   };
 
   return (
@@ -34,5 +34,5 @@ const DurationSection = ({ setDurationSectionPrice }) => {
   );
 };
 
-const mapDispatchToProps = { setDurationSectionPrice };
+const mapDispatchToProps = { updatePrice };
 export default connect(null, mapDispatchToProps)(DurationSection);

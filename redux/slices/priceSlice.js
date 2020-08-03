@@ -11,52 +11,17 @@ const priceSlice = createSlice({
     additionalOptionsPrice: 0,
   },
   reducers: {
-    setMediumSectionPrice(state, action) { // TDOD: refactore to one action
+    updatePrice(state, action) { // TDOD: refactore to one action
       return {
         ...state,
-        mediumSectionPrice: action.payload,
+        ...action.payload,
       };
-    },
-    setStyleSectionPrice(state, action) {
-      return {
-        ...state,
-        styleSectionPrice: action.payload,
-      };
-    },
-    setDurationSectionPrice(state, action) {
-      return {
-        ...state,
-        durationSectionPrice: action.payload,
-      };
-    },
-    setTimeFrameSectionPrice(state, action) {
-      return {
-        ...state,
-        timeFrameSectionPrice: action.payload,
-      };
-    },
-    setProductionQualityPrice(state, action) {
-      return {
-        ...state,
-        productionQualityPrice: action.payload,
-      };
-    },
-    setAdditionalOptionsPrice(state, action) {
-      return {
-        ...state,
-        additionalOptionsPrice: action.payload,
-      };
-    },
+    }
   },
 });
 
 const { actions, reducer } = priceSlice;
 export const {
-  setMediumSectionPrice,
-  setStyleSectionPrice,
-  setProductionQualityPrice,
-  setAdditionalOptionsPrice,
-  setDurationSectionPrice,
-  setTimeFrameSectionPrice
+  updatePrice
 } = actions;
 export default reducer;

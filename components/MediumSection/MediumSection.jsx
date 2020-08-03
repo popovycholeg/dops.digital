@@ -6,13 +6,13 @@ import Dot from "../Dot/Dot";
 import RadioButton from "../RadioButton/RadioButton";
 import buttonsData from "./buttonsData.json";
 import SectionDescription from "../SectionDescription/SectionDescription";
-import { setMediumSectionPrice } from "../../redux/slices/priceSlice";
+import { updatePrice } from "../../redux/slices/priceSlice";
 
 const MediumSection = (props) => {
   const [activeId, setActiveId] = useState(-1);
   const handleClick = (index, price) => {
     setActiveId(index);
-    props.setMediumSectionPrice(price);
+    props.updatePrice({ mediumSectionPrice: price });
   };
 
   return (
@@ -40,5 +40,5 @@ const MediumSection = (props) => {
   );
 };
 
-const mapDispatchToProps = { setMediumSectionPrice };
+const mapDispatchToProps = { updatePrice };
 export default connect(null, mapDispatchToProps)(MediumSection);

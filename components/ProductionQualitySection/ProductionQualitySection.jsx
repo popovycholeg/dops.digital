@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 import Dot from "../Dot/Dot";
 import QualityRadio from "../QualityRadio/QualityRadio";
 import SectionDescription from "../SectionDescription/SectionDescription";
-import { setProductionQualityPrice } from "../../redux/slices/priceSlice";
+import { updatePrice } from "../../redux/slices/priceSlice";
 
 const BUTTONS = [
   { title: "Acceptable Quality", imagePath: "/apple.svg", price: 100.1 },
@@ -22,7 +22,7 @@ const ProductionQualitySection = (props) => {
 
   const handleClick = (index, price) => {
     setActiveId(index);
-    props.setProductionQualityPrice(price);
+    props.updatePrice({ productionQualityPrice: price });
   };
 
   return (
@@ -47,5 +47,5 @@ const ProductionQualitySection = (props) => {
   );
 };
 
-const mapDispatchToProps = { setProductionQualityPrice };
+const mapDispatchToProps = { updatePrice };
 export default connect(null, mapDispatchToProps)(ProductionQualitySection);
