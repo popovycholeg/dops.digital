@@ -12,6 +12,8 @@ const TimeLine = ({ priceReducer }) => {
     styleSectionPrice,
     productionQualityPrice,
     additionalOptionsPrice,
+    durationSectionPrice,
+    timeFrameSectionPrice
   } = priceReducer;
 
   const progressBarStyle = {
@@ -59,14 +61,14 @@ const TimeLine = ({ priceReducer }) => {
       <div
         className={cn({
           [styles.marker]: true,
-          [styles.active]: 0 !== 0,
+          [styles.active]: durationSectionPrice !== 0,
         })}
         style={{ left: "40%" }}
       ></div>
       <div
         className={cn({
           [styles.marker]: true,
-          [styles.active]: 0 !== 0,
+          [styles.active]: timeFrameSectionPrice !== 0,
         })}
         style={{ left: "60%" }}
       ></div>
