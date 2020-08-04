@@ -61,7 +61,7 @@ const Footer = () => {
       <div className={`${styles.logoContainer} ${styles.CopyrightContainer} ${styles.marginBottom}`}>
         <a
           href='#'
-          className={`small-text ${styles.link} ${styles.marginLeft}`}
+          className={`small-text ${styles.link}`}
         >
           Privacy Policy
         </a>
