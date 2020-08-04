@@ -42,7 +42,14 @@ const EstimatedCost = ({ priceReducer }) => {
       message_html: `Approximate cost of animation - ${price}$`,
     };
 
-    sendMail(templateParams);
+    sendMail(templateParams)
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        window.location.reload();
+      })
+      .catch((err) => {
+        console.log("FAILED...", err);
+      });
   };
 
   return (
@@ -56,7 +63,7 @@ const EstimatedCost = ({ priceReducer }) => {
           type='email'
           className={styles.emailInput}
           placeholder='E-mail'
-          onChange={event => setEmail(event.target.value)}
+          onChange={(event) => setEmail(event.target.value)}
           required
         />
         <button className={styles.submitBtn} disabled={disabled} type='submit'>
