@@ -13,8 +13,6 @@ const RadioButton = ({ number, text, isActive = false, imgPath = null, onClick }
         [styles.container]: true,
         [styles.active]: isActive,
       })}
-      // onMouseOver={() => setHover(true)}
-      // onMouseOut={() => setHover(false)}
       onClick={onClick}
     >
       <div className={styles.textContainer}>
@@ -28,7 +26,7 @@ const RadioButton = ({ number, text, isActive = false, imgPath = null, onClick }
       ) : (
         <div className={styles.circle}></div>
       )}
-      {(isHover && imgPath) && <img src="/image.png" alt="img" className={styles.image} />}
+      {imgPath && <img src="/image.png" alt="img" className={styles.image} />}
     </div>
   );
 };

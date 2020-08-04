@@ -18,6 +18,7 @@
   height: 25vh;
   padding: 15px;
   color: #ffffff;
+  resize: none;
 }
 
 .wordsCounter {

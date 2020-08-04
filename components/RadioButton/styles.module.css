@@ -53,11 +53,18 @@
 }
 
 .image {
+  visibility: hidden;
   position: absolute;
   border-radius: 10px;
   transform: translate(-90%, -95%);
-  transition: all 0 0.5s;
+  transition: all 0.5s;
   max-width: 80%;
+  opacity: 0;
+}
+
+.container:hover .image {
+  visibility: visible;
+  opacity: 0.9;
 }
 
 @media screen and (max-width: 950px) {

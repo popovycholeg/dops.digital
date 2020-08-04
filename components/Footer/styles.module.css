@@ -38,8 +38,8 @@
 .linksContainer {
   display: flex;
   flex-direction: row;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
 }
 
 .contentContainer {
@@ -55,7 +55,7 @@
 .links {
   display: flex;
   flex-direction: column;
-  margin-top: 5vh;
+  margin-top: 15px;
 }
 
 .link{
