@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
+import { sendMail } from "../../utils/sendMail";
 
 import styles from "./styles.module.css";
 import TimeLine from "../TimeLine/TimeLine";
 
 const EstimatedCost = ({ priceReducer }) => {
+  const [email, setEmail] = useState("");
+
   const {
     mediumSectionPrice,
     styleSectionPrice,
@@ -30,18 +33,16 @@ const EstimatedCost = ({ priceReducer }) => {
     durationSectionPrice === 0 ||
     timeFrameSectionPrice === 0;
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = (e) => {
+    // e.preventDefault();
 
-    // const res = await fetch("/api/send", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify(inputs),
-    // });
-    // const text = await res.text();
-    // handleResponse(res.status, text);
+    const templateParams = {
+      send_to: email,
+      from_name: "Dops test",
+      message_html: `Approximate cost of animation - ${price}$`,
+    };
+
+    sendMail(templateParams);
   };
 
   return (
@@ -50,11 +51,12 @@ const EstimatedCost = ({ priceReducer }) => {
       <p className={styles.price}>${price}</p>
       <div className={styles.horizontalLine}></div>
       <TimeLine />
-      <form onSubmit={handleSubmit} className={styles.form}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <input
           type='email'
           className={styles.emailInput}
           placeholder='E-mail'
+          onChange={event => setEmail(event.target.value)}
           required
         />
         <button className={styles.submitBtn} disabled={disabled} type='submit'>
