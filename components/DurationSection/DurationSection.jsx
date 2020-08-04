@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 import styles from "./styles.module.css";
-import Dot from "../Dot/Dot";
+import Dot from "../Common/Dot/Dot";
 import StepRange from "../StepRange/StepRange";
 import marks from "./marks.json";
 import SectionDescription from "../SectionDescription/SectionDescription";

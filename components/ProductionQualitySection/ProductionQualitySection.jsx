@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 
 import styles from "./styles.module.css";
-import Dot from "../Dot/Dot";
-import QualityRadio from "../QualityRadio/QualityRadio";
+import Dot from "../Common/Dot/Dot";
+import QualityRadio from "../Common/QualityRadio/QualityRadio";
 import SectionDescription from "../SectionDescription/SectionDescription";
 import { updatePrice } from "../../redux/slices/priceSlice";
 
