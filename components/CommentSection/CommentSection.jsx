@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 
 import styles from "./styles.module.css";
-import Dot from "../Dot/Dot";
 
 const CommentSection = () => {
   const [lettersCount, setLettersCount] = useState(0);

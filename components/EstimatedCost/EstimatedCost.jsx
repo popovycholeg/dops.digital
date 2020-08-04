@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { sendMail } from "../../utils/sendMail";
 
 import styles from "./styles.module.css";
-import TimeLine from "../TimeLine/TimeLine";
+import TimeLine from "../Common/TimeLine/TimeLine";
 
 const EstimatedCost = ({ priceReducer }) => {
   const [email, setEmail] = useState("");
