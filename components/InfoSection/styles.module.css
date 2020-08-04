@@ -7,15 +7,14 @@
 
 .bigText {
   /* font: Regular 49px/42px NB International; */
-  width: 25%;
+  width: 30%;
   margin: 0;
 }
 
 .smallText {
   /* font: Regular 14px/21px NB International; */
   /* margin: 0; */
-  margin-left: 15%;
-  margin-top: 3vh;
+  margin-left: 12%;
 }
 
 .textContainer1 {

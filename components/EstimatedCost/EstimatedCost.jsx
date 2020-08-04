@@ -34,7 +34,7 @@ const EstimatedCost = ({ priceReducer }) => {
     timeFrameSectionPrice === 0;
 
   const handleSubmit = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
 
     const templateParams = {
       send_to: email,

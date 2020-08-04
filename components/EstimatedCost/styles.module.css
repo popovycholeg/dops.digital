@@ -47,6 +47,10 @@
   margin-top: 5%;
 }
 
+.submitBtn:disabled {
+  background-color: #494949;
+}
+
 .form{
   display: flex;
   flex-direction: column;
