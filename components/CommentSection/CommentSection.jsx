@@ -24,7 +24,10 @@ const CommentSection = () => {
         placeholder='Paste your text to count words...'
         onChange={handleChange}
       ></textarea>
-      <div className={styles.wordsCounter}>{lettersCount}</div>
+       <div className={styles.flexRow}>
+        <div className={styles.wordsCounter}>{lettersCount}</div>
+        <p className={`small-text ${styles.marginLeft}`}>Words</p>
+      </div>
     </section>
   );
 };
